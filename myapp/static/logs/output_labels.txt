@@ -1,0 +1,11 @@
+bear
+bison
+boar
+cat
+cattle
+deer
+dog
+elephant
+fox
+hedgehog
+leopard

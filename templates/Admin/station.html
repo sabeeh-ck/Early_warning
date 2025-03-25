@@ -1,0 +1,41 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/station_post/">
+{% csrf_token %}
+    <table class="table table-bordered  table-hover mt-3 mb-3">
+    <tr>
+      <td>Division</td>
+      <td><select name="select" id="select"class="form-control">
+          {% for i in data %}
+            <option value="{{ i.id }}">{{ i.division }}</option>
+        {% endfor %}
+      </select></td>
+    </tr>
+    <tr>
+      <td>Station</td>
+      <td><input type="text" name="textfield" id="textfield" class="form-control" required/></td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td><input type="text" name="textfield2" id="textfield2" class="form-control" required maxlength="10"/></td>
+    </tr>
+    <tr>
+      <td>District</td>
+      <td><input type="text" name="textfield3" id="textfield2" class="form-control" required/></td>
+    </tr>
+    <tr>
+      <td>Pin</td>
+      <td><input type="text" name="textfield4" id="textfield2" class="form-control" required maxlength="6"/></td>
+    </tr>
+    <tr>
+      <td>Place</td>
+      <td><input type="text" name="textfield5" id="textfield2" class="form-control" required/></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2"><input type="submit" name="button" id="button" value="Submit" class="btn btn-info" /></td>
+    
+    </tr>
+  </table>
+</form>
+{% endblock %}

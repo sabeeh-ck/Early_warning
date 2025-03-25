@@ -1,0 +1,43 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="/edit_station_post/">
+{% csrf_token %}
+    <table class="table table-bordered table-hover mt-3 mb-3">
+      <input type="hidden" value="{{ data1.id }}" name="id1">
+    <tr>
+      <td>Division</td>
+      <td><select name="select" id="select"class="form-control">
+           {% for i in data %}
+            <option value="{{ i.id }}"{% if data1.DIVISION.id == i.id %}selected{% endif %}>{{ i.division }}</option>
+        {% endfor %}
+      </select></td>
+    </tr>
+    <tr>
+      <td>Station</td>
+      <td><input type="text" name="textfield" id="textfield" value="{{ data1.name }}"class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td><input type="text" name="textfield2" id="textfield2" value="{{ data1.phone }}"class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>District</td>
+      <td><input type="text" name="textfield3" id="textfield3" value="{{ data1.district }}"class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Pin</td>
+      <td><input type="text" name="textfield4" id="textfield4" value="{{ data1.pin}}"class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Place</td>
+      <td><input type="text" name="textfield5" id="textfield5"value="{{ data1.place }}"class="form-control" /></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2"><input type="submit" name="button" id="button" value="update" class="btn btn-info"/></td>
+
+    </tr>
+  </table>
+</form>
+{% endblock %}

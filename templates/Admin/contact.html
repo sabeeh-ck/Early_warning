@@ -1,0 +1,29 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" action="/contact_post/">
+{% csrf_token %}
+  <table class="table table-bordered mb-3 mt-3">
+    <tr>
+      <td>name</td>
+      <td><input type="text" name="textfield" id="textfield"class="form-control" /></td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td><input type="text" name="textfield2" id="textfield2"class="form-control" /></td>
+    </tr><tr>
+      <td>Email</td>
+      <td><input type="text" name="textfield3" id="textfield2"class="form-control" /></td>
+    </tr><tr>
+      <td>place</td>
+      <td><input type="text" name="textfield4" id="textfield2"class="form-control" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="Submit"class="btn btn-info" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

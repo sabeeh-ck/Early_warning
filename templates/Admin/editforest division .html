@@ -1,0 +1,18 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/edit_forest_division_post/">
+    {% csrf_token %}
+  <table class="table table-bordered">
+      <input type="hidden" value="{{ data.id }}"name="id1">
+    <tr>
+      <th width="109">Division name</th>
+      <td width="177"><input type="text" name="textfield" id="textfield" value="{{ data.division }}"required class="form-control"/></td>
+    </tr>
+    <tr>
+      
+      <td align="center" colspan="2"><input type="submit" name="button" id="button" value="update"class="btn btn-info" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

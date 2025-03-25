@@ -1,0 +1,39 @@
+{% extends 'officer/officer.home.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/view_alert_search/">
+{% csrf_token %}
+      <table class="pull-left">
+
+    <tr>
+      <th width="55">From</th>
+      <td width="144"><input type="date" name="f" id="textfield" class="form-control"required/></td>
+      <th width="37">To</th>
+      <td width="151"><input type="date" name="t" id="textfield2" class="form-control"required/></td>
+      <td width="52"><input type="submit" name="button" id="button" value="Search" class="btn btn-success"/></td>
+    </tr>
+  </table>
+  </br>
+  </br>
+<table class="table table-bordered">
+
+    <tr>
+      <th>No</th>
+
+      <th>Date</th>
+      <th>Alert</th>
+      <th>&nbsp;</th>
+    </tr>
+      {% for i in data %}
+    <tr>
+
+      <td>&nbsp;{{ forloop.counter }}</td>
+      <td>&nbsp;{{ i.date }}</td>
+      <td>{{ i.alert }}</td>
+    <td><a href="/delete_alert/{{ i.id }}"onclick="return confirm('Are You Sure?')"class="btn btn-danger">Delete</a></td>
+    </tr>
+      {% endfor %}
+  </table>
+  
+  <p>&nbsp;</p>
+</form>
+{% endblock %}

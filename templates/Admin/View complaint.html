@@ -1,0 +1,37 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/view_usercomplaint_search/">
+{% csrf_token %}
+  <table class="pull-left mt-3 mb-3">
+    <tr>
+      <td>FROM</td>
+      <td><input type="date" name="textfield" id="textfield" class="form-control"/></td>
+      <td>TO</td>
+      <td><input type="date" name="textfield2" id="textfield2" class="form-control"/></td>
+      <td><input type="submit" name="button" id="button" value="SEARCH" class="btn btn-success"/></td>
+    </tr>
+  </table>
+    <table class="table table-bordered  table-hover mt-3 mb-3">
+    <tr>
+      <th width="42">SLNO</th>
+      <th width="38">DATE</th>
+      <th width="115">COMPLAINT</th>
+      <th width="71">USERINFO</th>
+      <th width="54">STATUS</th>
+      <th width="132">REPLY</th>
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>&nbsp;{{ forloop.counter}}</td>
+      <td>&nbsp;{{ i.date }}</td>
+      <td>&nbsp;{{ i.complaint }}</td>
+      <td>&nbsp;{{ i.USER.name }}</td>
+      <td>&nbsp;{{ i.status }}</td>
+      <td>{% if i.status == 'pending' %}<a href="/send_reply/{{ i.id }}"class="btn btn-success">SENDREPLY</a>{% else %}{{ i.reply }}{% endif %}</td>
+    </tr>
+      {% endfor %}
+  </table>
+  <p>&nbsp;</p>
+</form>
+{% endblock %}

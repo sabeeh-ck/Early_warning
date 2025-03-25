@@ -1,0 +1,30 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/search_reseved/">
+{% csrf_token %}
+  <table class="pull-left mb-3 mt-3">
+    <tr>
+      <td><input name="src" type="text" class="form-control"placeholder="name" required/></td>
+      <td><input type="submit" name="button" id="button" value="Search" class="btn btn-success"/></td>
+    </tr>
+  </table>
+    <table class="table table-bordered  table-hover mt-3 mb-3">
+  <tr>
+    <td>NO</td>
+    <td>Animal</td>
+    <td>Category</td>
+
+  </tr>
+      {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ forloop.counter }}</td>
+    <td>&nbsp;{{ i.name }}</td>
+    <td>&nbsp;{{ i.CATEGORY.category_name }}</td>
+
+  </tr>
+      {% endfor %}
+</table>
+
+</form>
+{% endblock %}

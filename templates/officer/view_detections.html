@@ -1,0 +1,29 @@
+{% extends 'officer/officer.home.html' %}
+{% block body %}
+
+
+{% csrf_token %}
+
+    <table class="table table-bordered">
+
+  <tr>
+    <th>NO</th>
+    <th>Animal</th>
+    <th>Image</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>&nbsp;</th>
+  </tr>
+      {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ forloop.counter }}</td>
+    <td>&nbsp;{{ i.detected }}</td>
+    <td>&nbsp;<img src="{{ i.content }}" height="100" width="100" /></td>
+      <td>{{ i.date }}</td>
+      <td>{{ i.time }}</td>
+    <td><a href="http://maps.google.com/?q={{ i.latitude }},{{ i.longitude }}" target="_blank" class="btn btn-success">Locate</a></td>
+  </tr>
+      {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/search_officer/"enctype="multipart/form-data">
+{% csrf_token %}
+  <table class="pull-left">
+    <tr>
+      <td><input type="text" name="src" id="textfield" class="form-control" /></td>
+      <td><input type="submit" name="button" id="button" value="Search" class="btn btn-success"/></td>
+    </tr>
+  </table>
+  <table class="table table-bordered">
+    <tr>
+      <td>NO</td>
+      <td>Station</td>
+      <td>Name</td>
+      <td>Address</td>
+      <td>phone</td>
+      <td>age</td>
+      <td>gender</td>
+      <td>email</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>&nbsp;{{ forloop.counter }}</td>
+      <td>&nbsp;{{ i.STATION.name }}</td>
+      <td>{{ i.name }}<br><img src="{{ i.photo }}" width="50"height="50"></td>
+      <td>&nbsp;{{ i.place }}<br>{{ i.city }}<br>{{ i.city }}<br>{{ i.pin }}</td>
+      <td>&nbsp;{{ i.phone }}</td>
+      <td>&nbsp;{{ i.age }}</td>
+      <td>&nbsp;{{ i.gender }}</td>
+      <td>&nbsp;{{ i.email }}</td>
+      <td><a href="/edit_officer/{{ i.id }}"class="btn btn-success">Edit</a></td>
+      <td><a href="/delete_officer/{{ i.id }}"onclick="return confirm('Are You Sure?')"class="btn btn-danger">Delete</a></td>
+      <td><a href="/notification/{{ i.id }}"class="btn btn-success">notification</a></td>
+
+    </tr>
+      {% endfor %}
+  </table>
+  <p>&nbsp;</p>
+</form>
+{% endblock %}

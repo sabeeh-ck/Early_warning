@@ -1,0 +1,39 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/search_station/">
+{% csrf_token %}
+  <table class="pull-left">
+    <tr>
+      <td><input type="text" name="textfield" id="textfield" class="form-control"required placeholder="name"/></td>
+      <td><input type="submit" name="button" id="button" value="Search"class="btn btn-success" /></td>
+    </tr>
+  </table><table class="table table-bordered">
+  <tr>
+    <th>NO</th>
+    <th>Division</th>
+    <th>Station</th>
+    <th>Contact</th>
+    <th>District</th>
+    <th>Pin</th>
+    <th>Place</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+    {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ forloop.counter }}</td>
+    <td>&nbsp;{{ i.DIVISION.division }}</td>
+    <td>&nbsp;{{ i.name }}</td>
+    <td>&nbsp;{{ i.phone }}</td>
+    <td>&nbsp;{{ i.district }}</td>
+    <td>&nbsp;{{ i.pin }}</td>
+    <td>&nbsp;{{ i.place }}</td>
+    <td><a href="/edit_station/{{ i.id }}#tab"class="btn btn-success">Edit</a></td>
+    <td><a href="/delete_station/{{ i.id }}#tab"onclick="return confirm('Are You Sure?')"class="btn btn-danger">Delete</a></td>
+  </tr>
+    {% endfor %}
+</table>
+
+</form>
+{% endblock %}

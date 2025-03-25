@@ -1,0 +1,77 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form action="/forest_officer_post/" method="post" enctype="multipart/form-data" name="form1" id="form1">
+{% csrf_token %}
+    <table class="table table-bordered  table-hover mt-3 mb-3">
+    <tr>
+      <td width="112">Sation</td>
+<td><select name="select" id="select"class="form-control">
+           {% for i in data %}
+            <option value="{{ i.id }}">{{ i.name }}</option>
+        {% endfor %}
+      </select></td>    </tr>
+    <tr>
+      <td>Officer name</td>
+      <td><input type="text" name="textfield2" id="textfield2" requiredclass="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" name="textfield3" id="textfield2" class="form-control"required/></td>
+    </tr>
+    <tr>
+      <td>Genter</td>
+      <td><p>
+        <label>
+          <input type="radio" name="RadioGroup1" value="male" id="RadioGroup1_0" class="form-control"checked/>
+          male</label>
+        <br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="female" id="RadioGroup1_1" class="form-control"/>
+          female</label>
+        <br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="other" id="RadioGroup1_2" class="form-control"/>
+          other</label>
+        <br />
+      </p></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><input type="text" name="textfield4" id="textfield2"class="form-control"required /></td>
+    </tr>
+    <tr>
+      <td>Photo</td>
+      <td><input type="file" name="fileField" id="fileField" class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Phone_no</td>
+      <td><input type="text" name="textfield5" id="textfield2"requiredclass="form-control"/></td>
+    </tr>
+
+    <tr>
+      <td>State</td>
+      <td><input type="text" name="textfield7" id="textfield2" class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" name="textfield8" id="textfield2"required class="form-control" /></td>
+    </tr>
+  <tr>
+      <td>Place</td>
+      <td><input type="text" name="textfield6" id="textfield2" required class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Pin</td>
+      <td><input type="text" name="textfield9" id="textfield2"required class="form-control"/></td>
+    </tr><tr> <tr>
+      <td>password</td>
+      <td><input type="password" name="textfield10" id="textfield2" class="form-control"/></td>
+    </tr><tr>
+      <td align="center" colspan="2"><input type="submit" name="button" id="button" value="Submit" class="btn btn-info"/></td>
+    </tr>
+  
+  </table>
+  
+</form>
+{% endblock %}

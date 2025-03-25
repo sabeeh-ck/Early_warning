@@ -1,0 +1,7 @@
+bear
+bison
+boar
+elephant
+hedgehog
+hyena
+leopard

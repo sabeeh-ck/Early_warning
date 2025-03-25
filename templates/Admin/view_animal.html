@@ -1,0 +1,40 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/search_animal/">
+{% csrf_token %}
+  <table class="pull-left">
+
+    <tr>
+      <td><input name="src" type="text"class="form-control" required placeholder="name" /></td>
+      <td><input type="submit" name="button" id="button" value="Search" class="btn btn-info"/></td>
+    </tr>
+  </table>
+    <table class="table table-bordered">
+
+  <tr>
+    <th>NO</th>
+    <th>Animal</th>
+    <th>Image</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+      {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ forloop.counter }}</td>
+    <td>&nbsp;{{ i.name }}</td>
+    <td>&nbsp;<img src="{{ i.image }}" height="100" width="100" /></td>
+    <td>&nbsp;{{ i.CATEGORY.category_name }}</td>
+      <td>{{ i.description }}</td>
+    <td><a href="/edit_animal/{{ i.id }}#tab"class="btn btn-success">Edit</a></td>
+    <td><a href="/delete_animal/{{ i.id }}#tab"onclick="return confirm('Are You Sure?')"class="btn btn-danger">Delete</a></td>
+    <td><a href="/reserved/{{ i.id }}#tab"class="btn btn-info">reseve</a></td>
+  </tr>
+      {% endfor %}
+</table>
+
+</form>
+{% endblock %}
