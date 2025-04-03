@@ -91,3 +91,4 @@ class Animal_notification(models.Model):
     latitude = models.CharField(max_length=100)
     date = models.DateField()
     time = models.CharField(max_length=100)
+    

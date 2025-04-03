@@ -790,5 +790,3 @@ def getallnots(request):
     else:
         return JsonResponse({"status":"no"})
 
-
-

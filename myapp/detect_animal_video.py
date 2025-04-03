@@ -2,8 +2,6 @@ import datetime
 import os
 import smtplib
 import time
-import tkinter as tk
-from tkinter import filedialog
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import cv2
@@ -12,9 +10,10 @@ import tensorflow as tf
 from myapp.DBConnection import Db
 from pygame import mixer
 
-CAM_LAT="11.9213572"
-CAM_LONG="75.7903065"
-STATIC_PATH=r"C:/Users/Sabeeh/OneDrive/Desktop/Main Project/Early_warning/myapp/static/"
+CAM_LAT = "11.9213572"
+CAM_LONG = "75.7903065"
+
+STATIC_PATH = r"C:/Users/Sabeeh/OneDrive/Desktop/Main Project/Early_warning/myapp/static/"
 MODEL_PATH = os.path.join(STATIC_PATH, "logs/output_graph.pb")
 LABELS_PATH = os.path.join(STATIC_PATH, "logs/output_labels.txt")
 BUZZERS_PATH = os.path.join(STATIC_PATH, "buzzers/")
@@ -22,9 +21,13 @@ BUZZERS_PATH = os.path.join(STATIC_PATH, "buzzers/")
 EMAIL_USER = "wildanimal2k25@gmail.com"
 EMAIL_PASS = "ghbf puhp abau hsrl"
 
+last_buzzer_time = 0
+
 def play_buzzer(anml):
-	mixer.init()
-	buzzer_map = {
+    global last_buzzer_time
+    current_time = time.time()
+    mixer.init()
+    buzzer_map = {
 		"bear": "buzzer-bear.mp3",
 		"elephant": "buzzer-elephant.mp3",
 		"leopard": "buzzer-leopard.mp3",
@@ -32,9 +35,11 @@ def play_buzzer(anml):
 		"bison": "buzzer-bison.mp3",
 		"deer": "buzzer-deer.wav"
 	}
-	if anml in buzzer_map:
-		mixer.music.load(os.path.join(BUZZERS_PATH, buzzer_map[anml]))
-		mixer.music.play()
+    if current_time - last_buzzer_time >= 3:
+        last_buzzer_time = current_time
+        if anml in buzzer_map:
+            mixer.music.load(os.path.join(BUZZERS_PATH, buzzer_map[anml]))
+            mixer.music.play()
 
 def get_office(anml, dt, tm, lati, longi):
 	db = Db()
@@ -75,8 +80,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 # initialize the video stream and allow the camera sensor to warm up
 print("[INFO] starting video stream...")
-vs = cv2.VideoCapture(r"C:\Users\Sabeeh\OneDrive\Desktop\samples\animal.mp4")	#	 from video
-#vs = cv2.VideoCapture(0)	#	from live cam
+#vs = cv2.VideoCapture(r"C:\Users\Sabeeh\OneDrive\Desktop\samples\amazing-giant-wild-boar-shots--dev-azılı-domuz-vuruşları.mp4")	#	 from video
+vs = cv2.VideoCapture(0)	#	from live cam
 time.sleep(2.0)
 
 # Load the model
@@ -156,5 +161,4 @@ with tf.Session() as sess:
 			break
 
 # do a bit of cleanup
-cv2.destroyAllWindows()
 vs.stop()

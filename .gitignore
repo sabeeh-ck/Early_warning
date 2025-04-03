@@ -1,3 +1,3 @@
 logs/retrain_logs/
 logs/*
-*.tfevents
+*.tfevents.*
