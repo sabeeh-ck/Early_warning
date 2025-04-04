@@ -1,0 +1,18 @@
+{% extends 'Admin/template.html' %}
+{% block body %}
+
+<form action="/admin_add_video_post/" method="post" enctype="multipart/form-data" name="form1" id="form1">
+{% csrf_token %}
+    <table class="table table-bordered  table-hover mt-3 mb-3">
+    <tr>
+      <td>Video</td>
+      <td><input type="file" name="fileField" id="fileField" class="form-control"/></td>
+    </tr>
+        <tr>
+      <td align="center" colspan="2"><input type="submit" name="button" id="button" value="Upload" class="btn btn-info"/></td>
+    </tr>
+  
+  </table>
+  
+</form>
+{% endblock %}

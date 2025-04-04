@@ -1,3 +1,4 @@
 logs/retrain_logs/
 logs/*
 *.tfevents.*
+*.mp4

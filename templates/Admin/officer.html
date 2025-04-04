@@ -5,7 +5,7 @@
 {% csrf_token %}
     <table class="table table-bordered  table-hover mt-3 mb-3">
     <tr>
-      <td width="112">Sation</td>
+      <td width="112">Station</td>
 <td><select name="select" id="select"class="form-control">
            {% for i in data %}
             <option value="{{ i.id }}">{{ i.name }}</option>

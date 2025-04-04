@@ -7,7 +7,11 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from myapp.models import *
-
+import os
+STATIC_PATH = r"C:/Users/Sabeeh/OneDrive/Desktop/Main Project/Early_warning/myapp/static/"
+MODEL_PATH = os.path.join(STATIC_PATH, "logs/output_graph.pb")
+LABELS_PATH = os.path.join(STATIC_PATH, "logs/output_labels.txt")
+BUZZERS_PATH = os.path.join(STATIC_PATH, "buzzers/")
 
 def login(request):
     return render(request,'login_new.html')
@@ -23,16 +27,16 @@ def login_post(request):
         elif res.type =='officer':
             return redirect('/ohome/')
         else:
-            return HttpResponse("<script>alert('Unauthorised user');window.location='/login/'</script>")
+            return HttpResponse("<script>alert('Unauthorised user');window.location='/'</script>")
     else:
-        return HttpResponse("<script>alert('Invalid details');window.location='/login/'</script>")
+        return HttpResponse("<script>alert('Invalid details');window.location='/'</script>")
 
 
 
 
 def forest_division(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      return render(request,'Admin/forest division.html')
@@ -45,14 +49,14 @@ def forest_division_post(request):
 
 def view_forest_division(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res = Division.objects.all()
      return render(request,'Admin/view_forestdivision.html',{'data':res})
 def search_division(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ser = request.POST['textfield']
@@ -62,7 +66,7 @@ def search_division(request):
 
 def edit_forest_division(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res = Division.objects.get(id=did)
@@ -81,7 +85,7 @@ def delete_division(request,did):
 
 def station(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ss=Division.objects.all()
@@ -106,14 +110,14 @@ def station_post(request):
 
 def view_station(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res=Station.objects.all()
      return render(request,'Admin/view_sation.html',{'data':res})
 def search_station(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ser = request.POST['textfield']
@@ -128,7 +132,7 @@ def delete_station(request,did):
 
 def edit_station(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ss=Division.objects.all()
@@ -157,7 +161,7 @@ def edit_station_post(request):
 
 def animal(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ss=Category.objects.all()
@@ -176,24 +180,24 @@ def animal_post(request):
 
 def view_animal(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     res = Animal.objects.filter(status='pending')
+     res = Animal.objects.all()
      return render(request,'Admin/view_animal.html',{'data':res})
 def search_animal(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ser = request.POST['src']
-     res = Animal.objects.filter(name__icontains=ser,status='pending')
+     res = Animal.objects.filter(name__icontains=ser)
      return render(request, 'Admin/view_animal.html', {'data': res})
 
 
 def edit_animal(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ss = Category.objects.all()
@@ -217,7 +221,7 @@ def delete_animal(request,did):
 
 def category(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      return render(request,'Admin/category.html')
@@ -232,14 +236,14 @@ def category_post(request):
 
 def view_category(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res = Category.objects.all()
      return render(request,'Admin/view_category.html',{'data':res})
 def search_category(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ser = request.POST['src']
@@ -248,7 +252,7 @@ def search_category(request):
 
 def edit_category(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res = Category.objects.get(id=did)
@@ -268,21 +272,21 @@ def delete_category(request,did):
 
 def reserved(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login rquerd");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login rquerd");window.location="/";</script>;''')
 
     else:
      res=Animal.objects.filter(pk=did).update(status='reserved')
      return HttpResponse('''<script>alert("Added as reserved");window.location="/view_receved/";</script>''')
 def view_receved(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res=Animal.objects.filter(status='reserved')
      return render(request,'Admin/reserved.html',{'data':res})
 def search_reseved(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ser= request.POST['src']
@@ -291,7 +295,7 @@ def search_reseved(request):
 
 def forest_officer(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ss = Station.objects.all()
@@ -338,21 +342,21 @@ def forest_offecer_post(request):
 
 def view_officer(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res = Forest_officer.objects.all()
      return render(request,'Admin/view_officer.html',{'data':res})
 def delete_officer(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res=Forest_officer.objects.get(id=did).delete()
      return redirect('/view_officer/')
 def search_officer(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      ser= request.POST['src']
@@ -414,7 +418,7 @@ def edit_officer_post(request):
 
 def view_usercomplaint(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res=Complaint.objects.filter(status="forwarded")
@@ -422,7 +426,7 @@ def view_usercomplaint(request):
      return render(request,'Admin/View complaint.html',{'data':res})
 def view_usercomplaint_search(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      f=request.POST["textfield"]
@@ -431,7 +435,7 @@ def view_usercomplaint_search(request):
      return render(request, 'Admin/View complaint.html', {'data':var})
 def send_reply(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login rquerd");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login rquerd");window.location="/";</script>;''')
 
     else:
      res=Complaint.objects.get(id=did)
@@ -446,7 +450,7 @@ def send_reply_post(request):
     return HttpResponse('''<script>alert("Reply sent");window.location="/view_usercomplaint/";</script>''')
 def notification(request,did):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res = Forest_officer.objects.get(id=did)
@@ -469,7 +473,7 @@ def notification_post(request):
     return HttpResponse('''<script>alert("Notification sent");window.location="/notification_v/";</script>''')
 def notification_view(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      res= Notification.objects.all()
@@ -489,17 +493,17 @@ def search_notification(request):
 #     return render(request,'Admin/allocation -Edit.html')
 def admin_home(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
        return render(request,'Admin/template.html')
 def logout(request):
     request.session['lid']=''
-    return redirect('/login/')
+    return redirect('/')
 
 def contact(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
      return render(request,'Admin/contact.html')
@@ -521,10 +525,139 @@ def admin_view_detections(request):
     res=Animal_notification.objects.all().order_by("-id")
     return render(request, "admin/view_detections.html", {"data":res})
 
+
+last_buzzer_time = 0
+
+import time, os, cv2, imutils
+from pygame import mixer
+import tensorflow as tf
+
+def play_buzzer(anml):
+    global last_buzzer_time
+    current_time = time.time()
+    mixer.init()
+    buzzer_map = {
+		"bear": "buzzer-bear.mp3",
+		"elephant": "buzzer-elephant.mp3",
+		"leopard": "buzzer-leopard.mp3",
+		"boar": "buzzer-boar.mp3",
+		"bison": "buzzer-bison.mp3",
+		"deer": "buzzer-deer.wav"
+	}
+    if current_time - last_buzzer_time >= 3:
+        last_buzzer_time = current_time
+        if anml in buzzer_map:
+            mixer.music.load(os.path.join(BUZZERS_PATH, buzzer_map[anml]))
+            mixer.music.play()
+
+def admin_add_video(request):
+    if request.session['lid'] == '':
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
+
+    else:
+     return render(request,'Admin/video_interface.html')
+def admin_add_video_post(request):
+
+    vid = request.FILES['fileField']
+
+    fs = FileSystemStorage()
+    date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + ".mp4"
+    fs.save(date, vid)
+
+    vid_path=r"C:\Users\Sabeeh\OneDrive\Desktop\Main Project\Early_warning\media\\"+date
+    # Disable tensorflow compilation warnings
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+    # initialize the video stream and allow the camera sensor to warm up
+    print("[INFO] starting video stream...")
+    vs = cv2.VideoCapture(vid_path)  # from live cam
+    time.sleep(2.0)
+
+    # Load the model
+    # with tf.gfile.FastGFile("logs/output_graph.pb", 'rb') as f:
+    with tf.gfile.FastGFile(MODEL_PATH, 'rb') as f:
+        graph_def = tf.GraphDef()
+        graph_def.ParseFromString(f.read())
+        _ = tf.import_graph_def(graph_def, name='')
+
+    with tf.Session() as sess:
+        softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
+
+        domestic_animals = {"cat", "cattle", "dog"}
+        # loop over the frames from the video stream
+        while True:
+            # grab the frame from the threaded video stream and resize it
+            # to have a maximum width of 400 pixels
+            ret, frame = vs.read()
+            if not ret:
+                print("[ERROR] Failed to read frame. Exiting...")
+                break
+
+            frame = imutils.resize(frame, width=400)
+            img_path = os.path.join(STATIC_PATH, "captured_image.jpg")
+            cv2.imwrite(img_path, frame)
+
+            image_data = tf.gfile.FastGFile(img_path, 'rb').read()
+
+            label_lines = [line.rstrip() for line in tf.gfile.GFile(LABELS_PATH)]
+
+            predictions = sess.run(softmax_tensor, {'DecodeJpeg/contents:0': image_data})
+            top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
+
+            for node_id in top_k:
+                human_string = label_lines[node_id]
+                score = predictions[0][node_id]
+
+                if human_string not in domestic_animals and score * 100 > 80.0:
+                    print(f"{human_string} detected (score = {score:.2f})")
+
+                    text = f"{human_string}: {score:.2f}%"
+                    cv2.putText(frame, text, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
+
+                    play_buzzer(human_string)
+
+
+                elif human_string in domestic_animals and score * 100 > 80.0:
+                    print("Domestic Animal detected, no action taken.")
+                    text = f"{human_string}: {score:.2f}%"
+                    cv2.putText(frame, text, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
+
+                else:
+                    print("Not identified")
+
+            # show the output frame
+            cv2.imshow("Detection", frame)
+            cv2.setWindowProperty("Detection", cv2.WND_PROP_TOPMOST, 1)
+            key = cv2.waitKey(1) & 0xFF
+
+            # if the `q` key was pressed, break from the loop
+            if key == ord("q"):
+                break
+
+    # do a bit of cleanup
+    cv2.destroyAllWindows()
+
+    return HttpResponse('''<script>alert("Video checked successfully");window.location="/admin_add_video/";</script>''')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #############       officer
 def ohome(request):
     if request.session['lid'] == '':
-        return HttpResponse('''<script>alert("login required");window.location="/login/";</script>;''')
+        return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     return render(request, "officer/officer.home.html")
     # return render(request, "officer/ohome.html")

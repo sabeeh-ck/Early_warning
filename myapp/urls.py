@@ -19,7 +19,7 @@ from django.urls import path
 from myapp import views
 
 urlpatterns = [
-    path('login/',views.login),
+    path('',views.login),
     path('login_post/',views.login_post),
     path('forest_division/',views.forest_division),
     path('view_forest_division/',views.view_forest_division),
@@ -40,6 +40,8 @@ urlpatterns = [
     path('send_reply_post/',views.send_reply_post),
     path('notification/<did>',views.notification),
     path('notification_v/',views.notification_view),
+    path('admin_add_video/',views.admin_add_video),
+    path('admin_add_video_post/',views.admin_add_video_post),
     # path('allocation/',views.allocation),
     # path('view_allocation/',views.view_allocation),
     # path('edit_allocation/',views.edit_allocation),
