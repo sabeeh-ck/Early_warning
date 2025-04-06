@@ -556,6 +556,7 @@ def admin_add_video(request):
 
     else:
      return render(request,'Admin/video_interface.html')
+
 def admin_add_video_post(request):
 
     vid = request.FILES['fileField']
