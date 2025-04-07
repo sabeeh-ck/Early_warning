@@ -41,7 +41,7 @@ class Category(models.Model):
 
 class Animal(models.Model):
     name = models.CharField(max_length=100)
-    image = models.CharField(max_length=100, default="")
+    image = models.ImageField(upload_to='animal_images/')
     description = models.CharField(max_length=500, default="")
     CATEGORY = models.ForeignKey(Category,on_delete=models.CASCADE ,default="")
 

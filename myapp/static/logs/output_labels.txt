@@ -2,10 +2,10 @@ bear
 bison
 boar
 cat
-cattle
+cow
 deer
 dog
 elephant
 fox
-hedgehog
 leopard
+porcupine

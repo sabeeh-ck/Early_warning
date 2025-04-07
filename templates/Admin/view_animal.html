@@ -26,12 +26,11 @@
   <tr>
     <td>&nbsp;{{ forloop.counter }}</td>
     <td>&nbsp;{{ i.name }}</td>
-    <td>&nbsp;<img src="{{ i.image }}" height="100" width="100" /></td>
+    <td>&nbsp;<img src="{{ i.image.url }}" width="100" /></td>
     <td>&nbsp;{{ i.CATEGORY.category_name }}</td>
       <td>{{ i.description }}</td>
     <td><a href="/edit_animal/{{ i.id }}#tab"class="btn btn-success">Edit</a></td>
     <td><a href="/delete_animal/{{ i.id }}#tab"onclick="return confirm('Are You Sure?')"class="btn btn-danger">Delete</a></td>
-    <td><a href="/reserved/{{ i.id }}#tab"class="btn btn-info">reseve</a></td>
   </tr>
       {% endfor %}
 </table>

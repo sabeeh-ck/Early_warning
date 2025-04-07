@@ -169,11 +169,15 @@ def animal(request):
 def animal_post(request):
     name = request.POST['textfield']
     category = request.POST['select']
+    description = request.POST['textarea']
+    image = request.FILES['filefield']
     dd = Category.objects.get(id=category)
 
-    obj=Animal()
-    obj.name=name
-    obj.CATEGORY=dd
+    obj = Animal()
+    obj.name = name
+    obj.CATEGORY = dd
+    obj.description = description
+    obj.image = image
     obj.save()
 
     return HttpResponse('''<script>alert("Animal details added");window.location="/view_animal/";</script>''')
@@ -198,7 +202,6 @@ def search_animal(request):
 def edit_animal(request,did):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
      ss = Category.objects.all()
      res = Animal.objects.get(id=did)
@@ -207,11 +210,15 @@ def edit_animal_post(request):
     did = request.POST['id1']
     name = request.POST['textfield']
     category = request.POST['select']
+    image = request.FILES['filefield']
+    description = request.POST['textarea']
     dd = Category.objects.get(id=category)
 
-    obj=Animal.objects.get(id=did)
-    obj.name=name
-    obj.CATEGORY=dd
+    obj = Animal.objects.get(id=did)
+    obj.name = name
+    obj.CATEGORY = dd
+    obj.image = image
+    obj.description = description
     obj.save()
 
     return HttpResponse('''<script>alert("Animal details updated");window.location="/view_animal/";</script>''')
@@ -507,6 +514,7 @@ def contact(request):
 
     else:
      return render(request,'Admin/contact.html')
+
 def contact_post(request):
     name=request.POST['textfield']
     phone= request.POST['textfield2']
@@ -526,11 +534,22 @@ def admin_view_detections(request):
     return render(request, "admin/view_detections.html", {"data":res})
 
 
-last_buzzer_time = 0
 
-import time, os, cv2, imutils
+import time, os, cv2, imutils, datetime, smtplib
+import numpy as np
 from pygame import mixer
 import tensorflow as tf
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from myapp.DBConnection import Db
+
+CAM_LAT = "11.9213572"
+CAM_LONG = "75.7903065"
+
+EMAIL_USER = "wildanimal2k25@gmail.com"
+EMAIL_PASS = "ghbf puhp abau hsrl"
+
+last_buzzer_time = 0
 
 def play_buzzer(anml):
     global last_buzzer_time
@@ -550,6 +569,40 @@ def play_buzzer(anml):
             mixer.music.load(os.path.join(BUZZERS_PATH, buzzer_map[anml]))
             mixer.music.play()
 
+def get_office(anml, dt, tm, lati, longi):
+	db = Db()
+	res = db.select("SELECT * FROM `myapp_forest_officer`")
+	for i in res:
+		send_mail(i['email'], anml, dt, tm, lati, longi)
+
+def send_mail(mail, anml, dt, tm, lati, longi):
+	s = smtplib.SMTP(host='smtp.gmail.com', port=587)
+	s.starttls()
+	s.login(EMAIL_USER, EMAIL_PASS)
+	msg = MIMEMultipart()  # create a message.........."
+	msg['From'] = EMAIL_USER
+	msg['To'] = mail
+	msg['Subject'] = "Wild animal alert"
+	body = f'Wild animal ({anml}) detected on {dt} {tm}. Location: http://maps.google.com/?q={lati},{longi}'
+	msg.attach(MIMEText(body, 'plain'))
+	s.send_message(msg)
+
+def save_detection(frame, human_string, cam_lati, cam_longi, db):
+	try:
+		now = datetime.datetime.now()
+		t = now.strftime("%H:%M")
+		dt = now.strftime("%Y%m%d_%H%M%S")
+
+		img_path = f"{STATIC_PATH}detections/{dt}.jpg"
+		cv2.imwrite(img_path, frame)
+		path=f"/static/detections/{dt}.jpg"
+		db = Db()
+		db.insert("INSERT INTO `myapp_animal_notification`(content, longitude, latitude, DATE, TIME, detected) VALUES('"+path+"', '"+cam_longi+"', '"+cam_lati+"', CURDATE(), '"+t+"', '"+human_string+"')")
+
+		get_office(human_string, now.date(), t, cam_lati, cam_longi)
+	except Exception as e:
+		print(f"Database error: {e}, skipping detection save.")
+
 def admin_add_video(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
@@ -558,14 +611,20 @@ def admin_add_video(request):
      return render(request,'Admin/video_interface.html')
 
 def admin_add_video_post(request):
+    action = request.POST.get('action')
 
-    vid = request.FILES['fileField']
+    if action == "live":
+        vid_path = 0
+    else:
+        if 'fileField' not in request.FILES:
+            return HttpResponse('''<script>alert("Please select a file to upload."); window.location="/admin_add_video/";</script>''')
+        vid = request.FILES['fileField']
+        fs = FileSystemStorage()
+        date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + ".mp4"
+        fs.save(date, vid)
 
-    fs = FileSystemStorage()
-    date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + ".mp4"
-    fs.save(date, vid)
+        vid_path = r"C:\Users\Sabeeh\OneDrive\Desktop\Main Project\Early_warning\media\\" + date
 
-    vid_path=r"C:\Users\Sabeeh\OneDrive\Desktop\Main Project\Early_warning\media\\"+date
     # Disable tensorflow compilation warnings
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -584,7 +643,7 @@ def admin_add_video_post(request):
     with tf.Session() as sess:
         softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
 
-        domestic_animals = {"cat", "cattle", "dog"}
+        domestic_animals = {"cat", "cow", "dog", "porcupine", "fox"}
         # loop over the frames from the video stream
         while True:
             # grab the frame from the threaded video stream and resize it
@@ -595,13 +654,17 @@ def admin_add_video_post(request):
                 break
 
             frame = imutils.resize(frame, width=400)
+            # Prepare the blank white info panel
+            height, width, _ = frame.shape
+            info_panel = np.ones((100, width, 3), dtype=np.uint8) * 255
+            text = ""
+            color = (128, 128, 128)
+
             img_path = os.path.join(STATIC_PATH, "captured_image.jpg")
             cv2.imwrite(img_path, frame)
 
             image_data = tf.gfile.FastGFile(img_path, 'rb').read()
-
             label_lines = [line.rstrip() for line in tf.gfile.GFile(LABELS_PATH)]
-
             predictions = sess.run(softmax_tensor, {'DecodeJpeg/contents:0': image_data})
             top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
 
@@ -609,25 +672,43 @@ def admin_add_video_post(request):
                 human_string = label_lines[node_id]
                 score = predictions[0][node_id]
 
-                if human_string not in domestic_animals and score * 100 > 80.0:
-                    print(f"{human_string} detected (score = {score:.2f})")
-
+                if score * 100 > 80.0:
                     text = f"{human_string}: {score:.2f}%"
-                    cv2.putText(frame, text, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
+                    color = (0, 0, 0)  # Black text for valid detection
+                    if human_string not in domestic_animals:
+                        print(f"{human_string} detected (score = {score:.2f})")
+                        play_buzzer(human_string)
 
-                    play_buzzer(human_string)
+                        try:
+                            db = Db()
+                            res = db.selectOne(
+                                "SELECT TIMEDIFF(CURTIME(), TIME) as tm FROM `myapp_animal_notification` WHERE DATE=CURDATE() AND latitude='" + CAM_LAT + "' AND longitude='" + CAM_LONG + "' AND detected='" + human_string + "' order by id desc")
+
+                            if res is None:
+                                print("No previous record found, saving detection.")
+                                save_detection(frame, human_string, CAM_LAT, CAM_LONG, db)
+                            else:
+                                try:
+                                    diff_mins = int(str(res['tm']).split(":")[1])
+                                    print(f"Time since last detection: {diff_mins} minutes")
+
+                                    if diff_mins >= 1:
+                                        save_detection(frame, human_string, CAM_LAT, CAM_LONG, db)
+                                except Exception as e:
+                                    print(f"Error parsing time difference: {e}, saving detection anyway.")
+                                    save_detection(frame, human_string, CAM_LAT, CAM_LONG, db)
+
+                        except Exception as e:
+                            print(f"Database error: {e}, skipping detection save.")
+
+                    else:
+                        print("Domestic Animal detected, no action taken.")
 
 
-                elif human_string in domestic_animals and score * 100 > 80.0:
-                    print("Domestic Animal detected, no action taken.")
-                    text = f"{human_string}: {score:.2f}%"
-                    cv2.putText(frame, text, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
-
-                else:
-                    print("Not identified")
-
+            cv2.putText(info_panel, text, (20, 65), cv2.FONT_HERSHEY_DUPLEX, 1.0, color, 2)
+            combined = np.vstack((info_panel, frame))
             # show the output frame
-            cv2.imshow("Detection", frame)
+            cv2.imshow("Detection", combined)
             cv2.setWindowProperty("Detection", cv2.WND_PROP_TOPMOST, 1)
             key = cv2.waitKey(1) & 0xFF
 
@@ -638,7 +719,7 @@ def admin_add_video_post(request):
     # do a bit of cleanup
     cv2.destroyAllWindows()
 
-    return HttpResponse('''<script>alert("Video checked successfully");window.location="/admin_add_video/";</script>''')
+    return HttpResponse('''<script>window.location="/admin_add_video/";</script>''')
 
 
 

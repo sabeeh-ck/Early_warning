@@ -1,12 +1,7 @@
-import datetime
-import os
-import smtplib
-import time
+import cv2, imutils, time, os, datetime, smtplib
+import tensorflow as tf
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import cv2
-import imutils
-import tensorflow as tf
 from myapp.DBConnection import Db
 from pygame import mixer
 
