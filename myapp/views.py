@@ -1,5 +1,4 @@
-import base64
-import datetime
+import base64, datetime, os
 
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse, JsonResponse
@@ -7,8 +6,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from myapp.models import *
-import os
-STATIC_PATH = r"C:/Users/Sabeeh/OneDrive/Desktop/Main Project/Early_warning/myapp/static/"
+STATIC_PATH = "D:/Main Project/Early_warning/myapp/static"
 MODEL_PATH = os.path.join(STATIC_PATH, "logs/output_graph.pb")
 LABELS_PATH = os.path.join(STATIC_PATH, "logs/output_labels.txt")
 BUZZERS_PATH = os.path.join(STATIC_PATH, "buzzers/")
@@ -31,15 +29,12 @@ def login_post(request):
     else:
         return HttpResponse("<script>alert('Invalid details');window.location='/'</script>")
 
-
-
-
 def forest_division(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     return render(request,'Admin/forest division.html')
+        return render(request,'Admin/forest division.html')
 def forest_division_post(request):
     fd = request.POST['textfield']
     obj=Division()
@@ -52,44 +47,43 @@ def view_forest_division(request):
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     res = Division.objects.all()
-     return render(request,'Admin/view_forestdivision.html',{'data':res})
+        res = Division.objects.all()
+        return render(request,'Admin/view_forestdivision.html',{'data':res})
 def search_division(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     ser = request.POST['textfield']
-     res = Division.objects.filter(division__icontains=ser)
-
-     return render(request,'Admin/view_forestdivision.html',{'data':res})
+        ser = request.POST['textfield']
+        res = Division.objects.filter(division__icontains=ser)
+    return render(request,'Admin/view_forestdivision.html',{'data':res})
 
 def edit_forest_division(request,did):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     res = Division.objects.get(id=did)
-     return render(request,'Admin/editforest division .html',{'data':res})
+        res = Division.objects.get(id=did)
+        return render(request,'Admin/editforest division .html',{'data':res})
 def edit_forest_division_post(request):
     did = request.POST['id1']
     fd = request.POST['textfield']
-    obj=Division.objects.get(id=did)
-    obj.division=fd
+    obj = Division.objects.get(id=did)
+    obj.division = fd
     obj.save()
     return HttpResponse('''<script>alert("Updated");window.location="/view_forest_division/";</script>''')
 
 def delete_division(request,did):
-    res=Division.objects.get(id=did).delete()
+    res = Division.objects.get(id=did).delete()
     return redirect('/view_forest_division/')
 
 def station(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     ss=Division.objects.all()
-     return render(request,'Admin/station.html',{'data':ss})
+        ss=Division.objects.all()
+        return render(request,'Admin/station.html',{'data':ss})
+
 def station_post(request):
     station = request.POST['textfield']
     contact = request.POST['textfield2']
@@ -98,13 +92,13 @@ def station_post(request):
     place = request.POST['textfield5']
     division = request.POST['select']
     dd = Division.objects.get(id=division)
-    obj=Station()
-    obj.name=station
-    obj.phone=contact
-    obj.district=district
-    obj.place=place
-    obj.pin=pin
-    obj.DIVISION=dd
+    obj = Station()
+    obj.name = station
+    obj.phone = contact
+    obj.district = district
+    obj.place = place
+    obj.pin = pin
+    obj.DIVISION = dd
     obj.save()
     return HttpResponse('''<script>alert("Forest station added");window.location="/view_station/";</script>''')
 
@@ -113,31 +107,29 @@ def view_station(request):
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     res=Station.objects.all()
-     return render(request,'Admin/view_sation.html',{'data':res})
+        res=Station.objects.all()
+        return render(request,'Admin/view_sation.html',{'data':res})
 def search_station(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     ser = request.POST['textfield']
-     res = Station.objects.filter(name__icontains=ser)
-     print(res)
-     return render(request,'Admin/view_sation.html',{'data':res})
+        ser = request.POST['textfield']
+        res = Station.objects.filter(name__icontains=ser)
+        print(res)
+        return render(request,'Admin/view_sation.html',{'data':res})
 
 
 def delete_station(request,did):
-    res=Station.objects.get(id=did).delete()
+    res = Station.objects.get(id=did).delete()
     return redirect('/view_station/')
 
 def edit_station(request,did):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     ss=Division.objects.all()
-     res = Station.objects.get(id=did)
-     return render(request,'Admin/Edit_station.html',{'data':ss,'data1':res})
+        ss=Division.objects.all()
+        res = Station.objects.get(id=did)
+        return render(request,'Admin/Edit_station.html',{'data':ss,'data1':res})
 
 def edit_station_post(request):
     did = request.POST['id1']
@@ -147,7 +139,6 @@ def edit_station_post(request):
     pin = request.POST['textfield4']
     place = request.POST['textfield5']
     dd = request.POST['select']
-
     obj = Station.objects.get(id=did)
     obj.name = station
     obj.phone = contact
@@ -164,48 +155,45 @@ def animal(request):
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
 
     else:
-     ss=Category.objects.all()
-     return render(request,'Admin/animal.html',{'data':ss})
+        ss=Category.objects.all()
+        return render(request,'Admin/animal.html',{'data':ss})
+
 def animal_post(request):
     name = request.POST['textfield']
     category = request.POST['select']
     description = request.POST['textarea']
     image = request.FILES['filefield']
     dd = Category.objects.get(id=category)
-
     obj = Animal()
     obj.name = name
     obj.CATEGORY = dd
     obj.description = description
     obj.image = image
     obj.save()
-
     return HttpResponse('''<script>alert("Animal details added");window.location="/view_animal/";</script>''')
 
 def view_animal(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     res = Animal.objects.all()
-     return render(request,'Admin/view_animal.html',{'data':res})
+        res = Animal.objects.all()
+        return render(request,'Admin/view_animal.html',{'data':res})
 def search_animal(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     ser = request.POST['src']
-     res = Animal.objects.filter(name__icontains=ser)
-     return render(request, 'Admin/view_animal.html', {'data': res})
-
+        ser = request.POST['src']
+        res = Animal.objects.filter(name__icontains=ser)
+        return render(request, 'Admin/view_animal.html', {'data': res})
 
 def edit_animal(request,did):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
     else:
-     ss = Category.objects.all()
-     res = Animal.objects.get(id=did)
-     return render(request,'Admin/animal - edit.html',{'data':res,'data1':ss})
+        ss = Category.objects.all()
+        res = Animal.objects.get(id=did)
+        return render(request,'Admin/animal - edit.html',{'data':res,'data1':ss})
+
 def edit_animal_post(request):
     did = request.POST['id1']
     name = request.POST['textfield']
@@ -213,15 +201,14 @@ def edit_animal_post(request):
     image = request.FILES['filefield']
     description = request.POST['textarea']
     dd = Category.objects.get(id=category)
-
     obj = Animal.objects.get(id=did)
     obj.name = name
     obj.CATEGORY = dd
     obj.image = image
     obj.description = description
     obj.save()
-
     return HttpResponse('''<script>alert("Animal details updated");window.location="/view_animal/";</script>''')
+
 def delete_animal(request,did):
     res=Animal.objects.get(id=did).delete()
     return redirect('/view_animal/')
@@ -229,41 +216,37 @@ def delete_animal(request,did):
 def category(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     return render(request,'Admin/category.html')
+        return render(request,'Admin/category.html')
+
 def category_post(request):
     name = request.POST['textfield']
-
     obj=Category()
     obj.category_name=name
     obj.save()
-
     return HttpResponse('''<script>alert("Category added");window.location="/view_category/";</script>''')
 
 def view_category(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     res = Category.objects.all()
-     return render(request,'Admin/view_category.html',{'data':res})
+        res = Category.objects.all()
+        return render(request,'Admin/view_category.html',{'data':res})
 def search_category(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     ser = request.POST['src']
-     res = Category.objects.filter(category_name__icontains=ser)
-     return render(request, 'Admin/view_category.html', {'data': res})
+        ser = request.POST['src']
+        res = Category.objects.filter(category_name__icontains=ser)
+        return render(request, 'Admin/view_category.html', {'data': res})
 
 def edit_category(request,did):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
      res = Category.objects.get(id=did)
      return render(request,'Admin/editcategory.html',{'data':res})
+
 def edit_category_post(request):
     did = request.POST['id1']
     categoryname = request.POST['textfield']
@@ -271,7 +254,6 @@ def edit_category_post(request):
     obj.category_name=categoryname
     obj.save()
     return HttpResponse('''<script>alert("Category updated");window.location="/view_category/";</script>''')
-
 
 def delete_category(request,did):
     res=Category.objects.get(id=did).delete()
@@ -307,6 +289,7 @@ def forest_officer(request):
     else:
      ss = Station.objects.all()
      return render(request,'Admin/officer.html',{'data':ss})
+
 def forest_offecer_post(request):
     station = request.POST['select']
     s= Station.objects.get(id=station)
@@ -320,9 +303,7 @@ def forest_offecer_post(request):
     state = request.POST['textfield8']
     pin = request.POST['textfield9']
     passw = request.POST['textfield10']
-
     photo = request.FILES['fileField']
-
     fs = FileSystemStorage()
     date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + ".jpg"
     fn = fs.save(date, photo)
@@ -361,13 +342,13 @@ def delete_officer(request,did):
     else:
      res=Forest_officer.objects.get(id=did).delete()
      return redirect('/view_officer/')
+
 def search_officer(request):
     if request.session['lid'] == '':
         return HttpResponse('''<script>alert("login required");window.location="/";</script>;''')
-
     else:
-     ser= request.POST['src']
-     pp=Forest_officer.objects.filter(name__icontains=ser)
+     ser = request.POST['src']
+     pp = Forest_officer.objects.filter(name__icontains=ser)
      return render(request,'Admin/view_officer.html',{'data':pp})
 
 def edit_officer(request,did):
@@ -535,7 +516,7 @@ def admin_view_detections(request):
 
 
 
-import time, os, cv2, imutils, datetime, smtplib
+import time, os, cv2, imutils, smtplib
 import numpy as np
 from pygame import mixer
 import tensorflow as tf

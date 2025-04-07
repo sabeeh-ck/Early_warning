@@ -8,7 +8,7 @@ from pygame import mixer
 CAM_LAT = "11.9213572"
 CAM_LONG = "75.7903065"
 
-STATIC_PATH = r"C:/Users/Sabeeh/OneDrive/Desktop/Main Project/Early_warning/myapp/static/"
+STATIC_PATH = r"D:\Main Project\Early_warning\myapp\static"
 MODEL_PATH = os.path.join(STATIC_PATH, "logs/output_graph.pb")
 LABELS_PATH = os.path.join(STATIC_PATH, "logs/output_labels.txt")
 BUZZERS_PATH = os.path.join(STATIC_PATH, "buzzers/")

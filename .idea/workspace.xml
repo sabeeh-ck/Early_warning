@@ -2,374 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb50cc0-7244-4f3e-81f3-c40b57e736ef" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/021195ffb271f051.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/02f3bbf1da724ef6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/04851c9cbeba109f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/04d9cced0dd42e6c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/05768d38ec.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/066fdf665a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/089cef3acc866627.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/0925b96b77309a2f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/098c4da6d0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/0b2154403006f7ec.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/0bc9244dbf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/0c805afd8718c328.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/0dc9f0e83d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/0e2004910f2bf847.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/128fc39904.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/129dd77ad8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/141a89e2de02312b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/14c9fb317ba6b92c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/14e28b8ea5c59032.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1506e28a14198d7a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1561ee74a4f7b731.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/15ad1a8c516ebe5b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/177bc31f99.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/17a29c13f5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1860ca756579258f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1a04c4ed30eee935.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1b441e409f16a1e4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1b54f10c3b429a41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1bdb6f9696.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1bff8f72211a9c0f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1ded8e6b919074f0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/1f286c4bb30960f5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/220effd28096ff0f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2334fac41ef084a2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/23957626ccae0c1d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/23d5ae3c7f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2400a8b66e63b90d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/249f655af433fc41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/24df3def2d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/24ef2da760e32fb2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2515fc48ed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2defbeec7d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2e8e13102c8483e2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2ed1338f5186d353.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2f714376e6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/2fa4d728947841cd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/30e10509da.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/30ebbfac77011c7f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/31704c4bf3f82eae.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3247dcd9fc0542bb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/32eae3eecf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/347c40ab10051661.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/361e677a43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/36296aefe846a82e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/36301bb736d8fd11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/369c4bfa7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3846ac7fae.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3a95b92996.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3ccbdb60e4baab56.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3d64a8f546.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3d92cd804b358a74.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3df89aa7cd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3e7a900953.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3ecb859180.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3ef83fdb8602626c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3f2fba956b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3f48de9fc0ac6c7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3f5c04a48c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3fcd6ed1c3cf2d9b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/3fe1cc342fbea9c6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/408bb4a1d3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4364d63e316e6ae5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/45b88fb978d91d15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/46beba7077.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/47f2df417e10dd7f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/491e05deef.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4a426770f515d6a2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4c357a6907.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4d211ac255f269a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4dd710bf1d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4e103dcf2c5239c7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4e30f75839fae913.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4f217eee30c07d91.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/4f25c5dd6bd91d1b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/505ccff90e56cdf6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/52772cb60ec8b604.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/52bbce12671c89f1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/52c1444f43fb1fdc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/535e2ee3a70f19ca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/53af58f3d39c9a7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/54d1938b52d58f5d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/5543c8154cad5b80.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/5648bde7fdfd9766.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/56532d6cffe0c917.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/57f06d0f4217e496.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/5810024768221bb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/58163a9942a9d221.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/5d342f46d0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/601b6b630cd4d90f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/61b38cf56f354df5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/63de1c2142b160d6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/643de553bdb1b209.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6446325073d9c356.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6496eb14c0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/64b0e4fb38df21b8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/64f159e8ff.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6581250accb252b5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/68087b595a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6b792f8539a62e67.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6cccda21bb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6cfa77fb7c882b37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/6e7fbb17c2aeadbb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7080a0e4bcf2c84a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/73aa6ef6638f8425.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/743a675fcb61095b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/743cf00fda5a6618.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/74aa413e84cc47d7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/781a5841a341f2fc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/781d2c76422dde33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/79a5b1614a2dd857.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7a7ec4085bcb9fd8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7a90f08663383481.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7c1df0a13a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7d42f0e881.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7d4b463567.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7e29f317b0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7e7669cc8a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7ea35b2c27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/7efd9c3dba023ee9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8005f47721.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/80f5e8d84a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/821fdbeca42a98a1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8231cd6ada6f0cd1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/82491249a052c78a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/82f107f486.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/831b342987fd22ca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/85ebd9b6f4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8776f48a39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/878c0b82a694b99b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/87aab3b88de698f3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/87fd3b8748.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/889ae51391e9a8b3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/88ce8d773f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/88d182b67077ff13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8946e4b6f78cbc6b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8bfa7021d75746ce.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8dc75d04ac.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/8e5ebe9684.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/91a7534a3005fc10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/91e4f9b22fa0cc97.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/928bda9343.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/934acafaac7d892a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/93b9383853d5f6c6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/95f848d627.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9640c80f78.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/96decfc0ff.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/96e1df5761f3d591.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/971e2ba00ec3f268.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/97316fe963138baa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/987aa8b95e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/999b2ba43f498d57.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9a24464b368bcb0e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9ac37290be51eac0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9bf76f7295.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9c1447acfdaa5f1a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9c53ba2dcc734b28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9c8612ce65.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9cd8725a3b937c09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9d5e9db945.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/9d96f3293e1b7432.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/a242bbc984bfe112.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/a2bc25bd4d4145b9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/a35b8543507acdd2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/a7d9ca79f190f584.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/a9dbaa2ef7acda02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/ad10853e21a21062.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/adedbc92418ea580.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/aed3da55e0bc6852.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/af7f6ddf0c41eadb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/afac8875d2dadaf3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/b075c87f3962c9b2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/b45f0e088ba581f2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/b7f0609738220d71.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/bc7bdbdc0adb80a2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/bd4ad102b75e74e8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/be6454cf51c74709.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/c256baa0b13f8fc3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/c3303c6efac856be.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/c5e088383cbe7c41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/cce3d354d35e99da.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/ce902200e4d89879.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d041792794f559c0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d18c57e2866ae822.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d33b2dfd4043c6b2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d48b994023e536d0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d4a12f39f0c09788.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d54430e6d9a105aa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/d7911bf5ab8d4af1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/db593a5fa38b8b9d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/dd87708492a06585.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/ddfdeb9ba20bdf80.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/decf2bf215b7066b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/e10af05cf76b6fa8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/e29dbd199b614f0d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/e805d45893cb1c19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/e9fef8a8ea75cdd3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/ec1ef7a131eea280.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/eef81394ea35264e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/f952ecc795233e69.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/f9b982c12e1ee0a3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/fae64f607e054aba.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/fc5b63eab4ef0fb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/fcc4015d5444b075.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/fd634e4d8ead18f8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/ffce46ce278e7579.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/cattle/ffcfb20f7753e9d1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/027b2851c942a2f0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/037fda7d6a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/0427cbb533.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/0a7794fa59.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/0af190167b0ec1ef.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/0b7a9869c6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/0d49c10ce3fb6c37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/0ff9203a2a58be6a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/11479c7b8aa9c632.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/13d5266d04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/158ce30af977092f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/17bfa9843e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/1b178ad0cf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/1eefcfdbeb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/1fcb528d9ae82698.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/1fdc0e3d58.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/203efc9b7c535644.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/20616458dc50d555.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/209aa111fd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/2113f1574844c0a0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/22e640bc78.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/23e461a41b340dc6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/23f85c33b0c971ca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/240613d9db0258fb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/27ba879f67.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/28a08b0b7a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/290d43672d370e73.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/2c2dcab4bd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/2c963ee3aa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/2ce1bb2d31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/2e29079e12be11c6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/2f703f4099.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/303705abd0c21261.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/329960eacab35f35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/32ecce8ad4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/333c4a0af630b34a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/346d3e2497697cbb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/34d5013879aa22c0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/361b8f608c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/368b6113e4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/37eaaef021cd7f5d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/3a20b11532.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/3ba1b876db686b94.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/3bf3994477.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/3c774ccdd1be8e7b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/3d185c217b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/3d90bbebd0839efc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/4000713b1f34bb40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/40af5462050db23c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/44f26242cd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/457bea7ad9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/4700e90b469c2cef.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/47601d2660f84e8f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/49042bdc7c054e63.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/4c968760eb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/4ddc7bc2d386b2cb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/4f5c456404ac4033.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/50073c7791342f16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/50e5665a5dc05bb0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/523241c2b3fafebc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/543f51219987abd4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/5686acaa6d7da47b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/56c6cfda7f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/56dd69f4f7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/56e89419986bfc12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/59ec0cdb49.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/5b7f0e0c31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/5d13f1872c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/5d77748cea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/5ea0fd160e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/5ebc5a6f48.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/61c91db155.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/64a39121cd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/64c03b0a2b0d11b4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/662fbdfc54a6c726.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/68ff0c6f8f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6945a18630723f7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6a3a8ae765.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6a3f9ff007.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6c8fe176e6fd1c08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6cb2744f5a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6d36796385.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/6f2f24cf59d62f23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7224b4ed56b139ba.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7340243e5c0a28a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/73c4babf28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/74f59350e6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/773d9f07327e1e09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/78c30aafa8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/79da646111148572.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7a4d56b36b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7b272f34f8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7b58e752e9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7b6736369f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7c00fc94aca3de12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7c0b3d220f16b74c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/7dc4a03610fcb080.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/80ee8c7a2ea4d46f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/80fc32b7199bbcc8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/86e47a6093.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/87c66fb1f6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/888d5fb15e210434.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/8c03a012e4bfe123.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/8ccacacd06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/8d322f3f2a07716e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/8dff86186c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/8f388613a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/92c55b4caa39faf3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/93d2538527.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/96a442d710.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/98dc58eebe4e94aa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/99c5d93908.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9a8fdcf1c7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9ae1fade83.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9b0549a2e2dcd106.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9b0e113c264597b9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9d05302cf616d84c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9d4c7836b2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/9e973d9a1a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/a26c74a0a4e1b547.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/a295449d1a68d2bb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/a29b1e379fdcf40f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/a5424e101beccf26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/a7a2483222a8c031.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/ab0467c731d36d5f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/ab63bf8796a9ee0f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/acaf4c8225d997d8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/b0f15a8da1510a92.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/bdb2f6b601cfd584.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/be7550138ad56689.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/c0151ab4d9cd76e8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/c25f755ff0ad6d60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/c99c364b2ace01ee.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/cbfd8660020ad48e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/dd9164595c7ed3a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/e5fc6bd73480f9f2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/e8879629a122a41b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/eb9111abf5ac1d60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/f327be8e9382f516.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/dataset/hedgehog/fb327f97be79e551.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/static/captured_image.jpg" afterPath="$PROJECT_DIR$/myapp/static/captured_image.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/static/logs/output_graph.pb" afterPath="$PROJECT_DIR$/myapp/static/logs/output_graph.pb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/detect_animal_video.py" afterPath="$PROJECT_DIR$/myapp/detect_animal_video.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/models.py" afterPath="$PROJECT_DIR$/myapp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/static/logs/output_labels.txt" afterPath="$PROJECT_DIR$/myapp/static/logs/output_labels.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/train.py" afterPath="$PROJECT_DIR$/myapp/train.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views.py" afterPath="$PROJECT_DIR$/myapp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Admin/animal - edit.html" afterPath="$PROJECT_DIR$/templates/Admin/animal - edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Admin/animal.html" afterPath="$PROJECT_DIR$/templates/Admin/animal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Admin/video_interface.html" afterPath="$PROJECT_DIR$/templates/Admin/video_interface.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Admin/view_animal.html" afterPath="$PROJECT_DIR$/templates/Admin/view_animal.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -405,28 +39,52 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="704" column="39" lean-forward="false" selection-start-line="704" selection-start-column="39" selection-end-line="704" selection-end-column="39" />
+            <state relative-caret-position="188">
+              <caret line="351" column="9" lean-forward="false" selection-start-line="351" selection-start-column="9" selection-end-line="351" selection-end-column="9" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1743967415333" expanded="true" signature="19517:19553" ph="SELECT * FRO... myapp_forest_officer" />
-                <marker date="1743967415333" expanded="true" signature="20383:20566" ph="INSERT INTO `myapp_animal_notification`... " />
-                <marker date="1743967415333" expanded="true" signature="23959:24168" ph="SELECT TIMED... myapp_animal_notification" />
+                <element signature="e#0#27#0" expanded="true" />
+                <marker date="1744031193088" expanded="true" signature="19572:19608" ph="SELECT * FRO... myapp_forest_officer" />
+                <marker date="1744031193088" expanded="true" signature="20438:20621" ph="INSERT INTO `myapp_animal_notification`... " />
+                <marker date="1744031193088" expanded="true" signature="24014:24223" ph="SELECT TIMED... myapp_animal_notification" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detect_animal_video.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view_officer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Admin/view_officer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/static/web1/images/1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myapp/static/web1/images/2.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detect_animal_video.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/detect_animal_video.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2268">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="22" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
-                <marker date="1743951488079" expanded="true" signature="1242:1278" ph="SELECT * FRO... myapp_forest_officer" />
-                <marker date="1743951488079" expanded="true" signature="2108:2291" ph="INSERT INTO `myapp_animal_notification`... " />
-                <marker date="1743951488079" expanded="true" signature="4326:4523" ph="SELECT TIMED... myapp_animal_notification" />
+                <marker date="1744030612925" expanded="true" signature="1211:1247" ph="SELECT * FRO... myapp_forest_officer" />
+                <marker date="1744030612925" expanded="true" signature="2077:2260" ph="INSERT INTO `myapp_animal_notification`... " />
+                <marker date="1744030612925" expanded="true" signature="4295:4492" ph="SELECT TIMED... myapp_animal_notification" />
               </folding>
             </state>
           </provider>
@@ -452,31 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ohome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/officer/ohome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="video_interface.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Admin/video_interface.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Admin/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3738">
-              <caret line="178" column="16" lean-forward="false" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -504,16 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="animal.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Admin/animal.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -526,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static_path</find>
       <find>email</find>
       <find>cam_longi</find>
       <find>STATIC_PATH</find>
@@ -556,6 +183,7 @@
       <find>7000</find>
       <find>cv</find>
       <find>import</find>
+      <find>datetime</find>
     </findStrings>
     <replaceStrings>
       <replace>myapp</replace>
@@ -611,17 +239,17 @@
         <option value="$PROJECT_DIR$/Early_warning/settings.py" />
         <option value="$PROJECT_DIR$/templates/Admin/view_officer.html" />
         <option value="$PROJECT_DIR$/myapp/static/web1/css/slider.css" />
-        <option value="$PROJECT_DIR$/../../New Text Document.html" />
-        <option value="$PROJECT_DIR$/../../index.html" />
+        <option value="D:/New Text Document.html" />
+        <option value="D:/index.html" />
         <option value="$PROJECT_DIR$/templates/officer/officer.home.html" />
         <option value="$PROJECT_DIR$/templates/Admin/template.html" />
         <option value="$PROJECT_DIR$/templates/Admin/animal.html" />
         <option value="$PROJECT_DIR$/templates/Admin/view_animal.html" />
         <option value="$PROJECT_DIR$/myapp/models.py" />
         <option value="$PROJECT_DIR$/templates/Admin/animal - edit.html" />
-        <option value="$PROJECT_DIR$/myapp/detect_animal_video.py" />
         <option value="$PROJECT_DIR$/myapp/train.py" />
         <option value="$PROJECT_DIR$/templates/Admin/video_interface.html" />
+        <option value="$PROJECT_DIR$/myapp/detect_animal_video.py" />
         <option value="$PROJECT_DIR$/myapp/views.py" />
       </list>
     </option>
@@ -894,7 +522,59 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dataset">
+            <PATH_ELEMENT USER_OBJECT="web1">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Early_warning">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="myapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="static">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web1">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Early_warning">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="myapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="static">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web1">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="css">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -904,7 +584,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/detect_animal_video.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -1271,7 +951,7 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1038" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24006444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1326,7 +1006,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myapp/views.py</url>
-          <line>1006</line>
+          <line>987</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -1342,7 +1022,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myapp/debug_captured.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/Admin/view_sation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1372,20 +1051,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../detect.py" />
+    <entry file="file://D:/detect.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/2b718ee2-9579-4ecf-aaf1-71e38351ccaf_Early_warning.7z.Early_warning.7z/Early_warning/myapp/detect_animal_video.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/d03535df-a7cd-4a68-870a-dc92d2ce6bef_Early_warning.7z.Early_warning.7z/Early_warning/myapp/detect_animal_video.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/cf790411-3bb0-4a58-8839-9177b7d27ac0_Early_warning.7z.Early_warning.7z/Early_warning/myapp/detect_animal_video.py" />
     <entry file="file://$PROJECT_DIR$/templates/Admin/upload.html" />
     <entry file="file://$PROJECT_DIR$/templates/Admin/result.html" />
     <entry file="file://$PROJECT_DIR$/myapp/forms.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/9d7cc7f7-a445-43e8-9ff1-da62cd65d328_Early_warning.7z.Early_warning.7z/Early_warning/myapp/detect_animal_video.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2275">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/9d7cc7f7-a445-43e8-9ff1-da62cd65d328_Early_warning.7z.Early_warning.7z/Early_warning/myapp/detect_animal_video.py" />
     <entry file="file://C:/Python36/Lib/site-packages/imutils/convenience.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="898">
@@ -1463,13 +1136,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/view_officer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myapp/static/logs/output_labels.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1504,11 +1170,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/web1/images/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myapp/static/web1/css/slider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -1516,7 +1177,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../New Text Document.html" />
+    <entry file="file://D:/New Text Document.html" />
     <entry file="file://$PROJECT_DIR$/myapp/static/web1/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
@@ -1524,7 +1185,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../index.html" />
+    <entry file="file://D:/index.html" />
     <entry file="file://$PROJECT_DIR$/templates/Admin/officer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1543,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,30 +1285,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/views.py">
+    <entry file="file://$PROJECT_DIR$/myapp/detect_animal_video.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="704" column="39" lean-forward="false" selection-start-line="704" selection-start-column="39" selection-end-line="704" selection-end-column="39" />
+        <state relative-caret-position="193">
+          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="22" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1743967415333" expanded="true" signature="19517:19553" ph="SELECT * FRO... myapp_forest_officer" />
-            <marker date="1743967415333" expanded="true" signature="20383:20566" ph="INSERT INTO `myapp_animal_notification`... " />
-            <marker date="1743967415333" expanded="true" signature="23959:24168" ph="SELECT TIMED... myapp_animal_notification" />
+            <element signature="e#0#48#0" expanded="true" />
+            <marker date="1744030612925" expanded="true" signature="1211:1247" ph="SELECT * FRO... myapp_forest_officer" />
+            <marker date="1744030612925" expanded="true" signature="2077:2260" ph="INSERT INTO `myapp_animal_notification`... " />
+            <marker date="1744030612925" expanded="true" signature="4295:4492" ph="SELECT TIMED... myapp_animal_notification" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/detect_animal_video.py">
+    <entry file="file://$PROJECT_DIR$/myapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2268">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="188">
+          <caret line="351" column="9" lean-forward="false" selection-start-line="351" selection-start-column="9" selection-end-line="351" selection-end-column="9" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <marker date="1743951488079" expanded="true" signature="1242:1278" ph="SELECT * FRO... myapp_forest_officer" />
-            <marker date="1743951488079" expanded="true" signature="2108:2291" ph="INSERT INTO `myapp_animal_notification`... " />
-            <marker date="1743951488079" expanded="true" signature="4326:4523" ph="SELECT TIMED... myapp_animal_notification" />
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1744031193088" expanded="true" signature="19572:19608" ph="SELECT * FRO... myapp_forest_officer" />
+            <marker date="1744031193088" expanded="true" signature="20438:20621" ph="INSERT INTO `myapp_animal_notification`... " />
+            <marker date="1744031193088" expanded="true" signature="24014:24223" ph="SELECT TIMED... myapp_animal_notification" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/view_officer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/web1/images/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/web1/images/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
