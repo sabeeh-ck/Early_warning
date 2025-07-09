@@ -104,6 +104,15 @@ An integrated web and vision-based system for early detection of wild animals ne
 
 ---
 
+## 👥 Collaborators
+
+- [@sabeeh-ck](https://github.com/sabeeh-ck)
+- [@ananya-pk](https://github.com/ananya-pk)
+- [@SREELAKSHMIVV54](https://github.com/SREELAKSHMIVV54) 
+- [@lillyy16](https://github.com/lillyy16)
+
+---
+
 ## 📧 Contact
 
 If you have feedback or want to contribute, feel free to open issues or pull requests!
