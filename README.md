@@ -1,5 +1,5 @@
 
-# 🐾 Early Warning System for Wildlife Detection
+# 🐾 Early Warning System for Wildlife Detection and Deterrence
 
 An integrated web and vision-based system for early detection of wild animals near forest zones. This project aims to assist forest departments by improving wildlife monitoring, reducing human-animal conflict, and speeding up response times.
 
